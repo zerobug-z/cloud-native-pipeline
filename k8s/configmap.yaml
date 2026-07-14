@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: cloud-native
+data:
+  DB_HOST: postgres-service
+  DB_NAME: cloudnative
+  DB_USER: postgres
+  REDIS_HOST: redis-service
